@@ -5,7 +5,6 @@
 
 #define RANDOM_MULTIPLIER_LONG 0x5DEECE66DUL
 
-
 #ifdef JRAND_DOUBLE
 #define Random double
 #define RANDOM_MULTIPLIER 0x5DEECE66Dp-48
