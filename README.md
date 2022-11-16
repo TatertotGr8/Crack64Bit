@@ -11,6 +11,7 @@ To run this project you will need a few things:
 This is finding a seed though brute force not the most efficient method be preapred to leave your computer running for a few hours. 
 
 **-[The Nvidia Cuda Toolkit](https://developer.nvidia.com/cuda-toolkit)**
+
 A fundamental part of this program is the use of parrel programing to find structure seeds. This is done by parrel programing made possible by the Nvidia Cuda Toolkit. By extension this also means you are required to have a Nvidia GPU to run this program.  
 
 **-[JavaJDK](https://www.oracle.com/java/technologies/javase/jdk16-archive-downloads.html)**
