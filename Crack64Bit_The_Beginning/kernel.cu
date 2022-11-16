@@ -1,57 +1,56 @@
-#ifndef __JRAND_CL
-#define __JRAND_CL
+#include <jrand.c>
 
-#undef JRAND_DOUBLE
+// Function “ Random get_random_with_structure_seed” 
+//Requires the potential world seed, an X value and a Z value and a generation chunk seed and
+//salt 
+static inline Random get_random_with_structure_seed (long world_seed, int x, int z, int salt) 
 
-#define RANDOM_MULTIPLIER_LONG 0x5DEECE66DUL
+//Do not get confused by the big scary numbers 
+//We are just multiplying the X and Z by a big scary number (addressed in SEED RNG) than   // the adding world seed and salt to this value. 
+{ return get_random(x * 341873128712L + z * 132897987541L + world_seed + salt);}
 
-#ifdef JRAND_DOUBLE
-#define Random double
-#define RANDOM_MULTIPLIER 0x5DEECE66Dp-48
-#define RANDOM_ADDEND 0xBp-48
-#define RANDOM_SCALE 0x1p-48
-
-inline uint random_next (Random *random, int bits) {
-  *random = trunc((*random * RANDOM_MULTIPLIER + RANDOM_ADDEND) * RANDOM_SCALE);
-  return (uint)((ulong)(*random / RANDOM_SCALE) >> (48 - bits));
+// Minecraft fortress function 
+static inline int fortress_at(long world_seed, int x, int z) {
+ //Region size of 27 
+ int rSize = 27;
+ //separation distance of 4 
+ int rSep = 4;
+ int constrained_x = x < 0 ? x - rSize + 1 : x;
+ int constrained_z = z < 0 ? z - rSize + 1 : z;
+ int rx = constrained_x / rSize;
+ int rz = constrained_z / rSize;
+ Random r = get_random_with_structure_seed(world_seed, rx, rz, 30084232);
+ if (random_next_int(&r, rSize - rSep) != x - rx * rSize) return 0;
+ if (random_next_int(&r, rSize - rSep) != z - rz * rSize) return 0;
+ if (random_next_int(&r,5) >= 2) return 0;
+ return 1;
 }
+// kernel function 
+__kernel void start(ulong offset, ulong stride, __global ulong *seeds, __global ushort *ret) {
+ size_t id = get_global_id(0);
+ uchar max_count = 0;
+ uchar max_last = 0;
+ ulong seed_base = (offset + id) * stride;
+ for (ulong i = 0; i < stride; i++) {
+  ulong worldSeed = seed_base|i;
 
-#else
-
-#define Random ulong
-#define RANDOM_MULTIPLIER RANDOM_MULTIPLIER_LONG
-#define RANDOM_ADDEND 0xBUL
-#define RANDOM_MASK (1UL << 48) - 1
-#define RANDOM_SCALE 1
-
-// Random  nextbits
-inline uint random_next (Random *random, int bits) {
-    *random = (*random * RANDOM_MULTIPLIER + RANDOM_ADDEND) & RANDOM_MASK;
-    return (uint)(*random >> (48 - bits));
+   //fortress data if cPos cords continue 
+  if (!fortress(worldSeed,-9, 20))continue; 
+  if (!fortress(worldSeed,-10, 20))continue; 
+  if (!fortress(worldSeed,-11, 20))continue; 
+  if (!fortress (worldSeed,-12, 20))continue; 
+  if (!fortress(worldSeed,-6, 19))continue; 
+  if (!fortress(worldSeed,-6, 18))continue;
+  if (!fortress(worldSeed,-6, 20))continue; 
+  if (!fortress(worldSeed,-6, 21))continue; 
+  if (!fortress(worldSeed,-8, 20))continue; 
+  if (!fortress (worldSeed,-5, 39))continue; 
+  if (!fortress(worldSeed,-5, 20))continue; 
+  if (!fortress(worldSeed,-6, 22))continue; 
+ 
+// 
+ max_count++;
+  seeds[id] = worldSeed;
+ }
+ ret[id] = (max_count << 8) | max_last;
 }
-// ~JRAND_DOUBLE
-#endif 
-
-// new Random(seed)
-#define get_random(seed) ((Random)((seed ^ RANDOM_MULTIPLIER_LONG) & RANDOM_MASK))
-#define get_random_unseeded(state) ((Random) ((state) * RANDOM_SCALE))
-
-// Random::nextInt(bound)
-inline uint random_next_int (Random *random, uint bound) {
-    int r = random_next(random, 31);
-    int m = bound - 1;
-    if ((bound & m) == 0) {
-        r = (uint)((bound * (ulong)r) >> 31);
-    } else {
-        for (int u = r;
-             u - (r = u % bound) + m < 0;
-             u = random_next(random, 31));
-    }
-    return r;
-}
-
-inline long random_next_long (Random *random) {
-    return (((long)random_next(random, 32)) << 32) + random_next(random, 32);
-}
-
-#endif
