@@ -30,6 +30,24 @@ When everything is installed you can run the first of this project by dowloading
 
 After this proces you would recive a out.txt file. Compile this with the second program **"Crack64Bit_The_Sequel"**. You can do this by adding the file to your resources folder on IntelliJ IDEA. You can see a screen recoding of this procsss [here](https://youtu.be/vMJORczjRSk). 
 
+This program is intentionally designed to be accessible in how it was uploaded.  Changeing the program to filter for a diffent set of data follows that model. Starting with the first program the imporant files to edit would be the kernal. Without majoir exterior editing of the program the only thing you would need to chnage is the defined fortress's. 
+
+```bash
+  if (!fortress(worldSeed,-9, 20))continue; 
+  if (!fortress(worldSeed,-10, 20))continue; 
+  if (!fortress(worldSeed,-11, 20))continue; 
+  if (!fortress (worldSeed,-12, 20))continue; 
+  if (!fortress(worldSeed,-6, 19))continue; 
+  if (!fortress(worldSeed,-6, 18))continue;
+  if (!fortress(worldSeed,-6, 20))continue; 
+  if (!fortress(worldSeed,-6, 21))continue; 
+  if (!fortress(worldSeed,-8, 20))continue; 
+  if (!fortress (worldSeed,-5, 39))continue; 
+  if (!fortress(worldSeed,-5, 20))continue; 
+  if (!fortress(worldSeed,-6, 22))continue; 
+ 
+```
+
 
 
 ## Acknowledgements
