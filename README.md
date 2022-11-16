@@ -16,6 +16,8 @@ A fundamental part of this program is the use of parrel programing to find struc
 
 **-[JavaJDK](https://www.oracle.com/java/technologies/javase/jdk16-archive-downloads.html)**
 
+Required for the second program, double check the varribles you would need a varrible "JAVA_HOME" is set to your Java JDK installed and the "PATH" varrible is set to the bin folder in your Java JDK folder.
+
 **-[Gradle](https://gradle.org/)**
 
 Build tool for Java. Used to incorporate the seed finding libarys into the Java program.  When installing Gradle it is imporant to make sure it is a compadible verrsion to Java, seen on the sites documentation. And **Gradle_Home** is set as a system varrible with the path set to the folders locasion on your system and and the bin folder added to the **"PATH"** varrible.
