@@ -38,7 +38,7 @@ After this proces you would recive a out.txt file. Compile this with the second 
 
  - [Minecraft@home](https://minecraftathome.com/)
  
- - [CUDA] (https://docs.nvidia.com/cuda/)
+ - [CUDA](https://docs.nvidia.com/cuda/)
 
 ## Lessons Learned
 
