@@ -10,16 +10,19 @@ To run this project you will need a few things:
 **-Patience**
 This is finding a seed though brute force not the most efficient method be preapred to leave your computer running for a few hours. 
 
-**[The Nvidia Cuda Toolkit](https://developer.nvidia.com/cuda-toolkit)**
+**-[The Nvidia Cuda Toolkit](https://developer.nvidia.com/cuda-toolkit)**
+A fundamental part of this program is  
 
-**[Java](https://www.oracle.com/java/technologies/javase/jdk16-archive-downloads.html)**
+**-[Java](https://www.oracle.com/java/technologies/javase/jdk16-archive-downloads.html)**
+
+**-[Gradle](https://gradle.org/)**
+
+**-[IntelliJ IDEA](https://www.jetbrains.com/idea/)**
+Allthough any programing evriemnt 
 
 
-- Visual Studio Code Community 
-- IntelliJ IDEA
-- Java JDK 16 
- 
-#CUDA 
+
+
 
 
 #Project Use
