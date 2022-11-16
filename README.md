@@ -11,9 +11,9 @@ To run this project you will need a few things:
 This is finding a seed though brute force not the most efficient method be preapred to leave your computer running for a few hours. 
 
 **-[The Nvidia Cuda Toolkit](https://developer.nvidia.com/cuda-toolkit)**
-A fundamental part of this program is  
+A fundamental part of this program is the use of parrel programing to find structure seeds. This is done by parrel programing made possible by the Nvidia Cuda Toolkit. By extension this also means you are required to have a Nvidia GPU to run this program.  
 
-**-[Java](https://www.oracle.com/java/technologies/javase/jdk16-archive-downloads.html)**
+**-[JavaJDK](https://www.oracle.com/java/technologies/javase/jdk16-archive-downloads.html)**
 
 **-[Gradle](https://gradle.org/)**
 
@@ -25,9 +25,6 @@ This is an IDE to run Java code, allthough any programing environment _should_ w
 
 
 
-
-
-
 #Project Use
 To run the first stage of this project download the zip file. 
 Superate  the file "Crack64Bit_The_Beginning" from the group I would suggest to drag it onto you desktop. 
@@ -36,6 +33,9 @@ You can see a screen recoding of this procsss [here](https://youtu.be/m_Qbvg5l4D
 
 
 After this proces you would recive a out.txt file.  Compile this with the second program "Crack64Bit_The_Sequel" 
+
+
+
 
 ## Acknowledgements
 
