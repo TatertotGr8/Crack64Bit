@@ -17,9 +17,11 @@ A fundamental part of this program is
 
 **-[Gradle](https://gradle.org/)**
 
+Build tool for Java. Used to incorporate the seed finding libarys into the Java program.  When installing Gradle it is imporant to make sure it is a compadible verrsion to Java, seen on the sites documentation. And **Gradle_Home** is set as a system varrible with the path set to the folders locasion on your system and and the bin folder added to the **"PATH"** varrible.
+
 **-[IntelliJ IDEA](https://www.jetbrains.com/idea/)**
 
-This is an IDE to run Java code,allthough any programing environment _should_ work code is configured to work on this environment. 
+This is an IDE to run Java code, allthough any programing environment _should_ work code is configured to work on this environment. 
 
 
 
