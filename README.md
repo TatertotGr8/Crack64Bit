@@ -6,8 +6,11 @@ Minecraft seed cracking the practice of finding an exact Minecraft world from da
 
 ## Docmentation
 To run this project you will need a few things:
+
 **-Patience**
-This is finding a seed though brute force not the most efficient 
+This is finding a seed though brute force not the most efficient method be preapred to leave your computer running for a few hours. 
+
+****
 
 
 
