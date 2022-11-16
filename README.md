@@ -10,11 +10,11 @@ To run this project you will need a few things:
 **-Patience**
 This is finding a seed though brute force not the most efficient method be preapred to leave your computer running for a few hours. 
 
-****
+**[The Nvidia Cuda Toolkit](https://developer.nvidia.com/cuda-toolkit)**
+
+**[Java](https://www.oracle.com/java/technologies/javase/jdk16-archive-downloads.html)**
 
 
-
-- The Cuda Toolkit
 - Visual Studio Code Community 
 - IntelliJ IDEA
 - Java JDK 16 
@@ -22,14 +22,7 @@ This is finding a seed though brute force not the most efficient method be preap
 #CUDA 
 
 
-#Environment
-
-#Java
- 
-
-
-
-
+#Project Use
 To run the first stage of this project download the zip file. 
 Superate  the file "Crack64Bit_The_Beginning" from the group I would suggest to drag it onto you desktop. 
 The executeable file "GPU.exe" does all the magic for you, click that and watch your power bill rise. 
@@ -37,6 +30,7 @@ You can see a screen recoding of this procsss [here](https://youtu.be/m_Qbvg5l4D
 
 
 After this proces you would recive a out.txt file.  Compile this with the second program "Crack64Bit_The_Sequel" 
+
 ## Acknowledgements
 
  - [Kaptainwutax Minecraft Seed Finding libraries](https://kaptainwutax.seedfinding.com/)
