@@ -27,6 +27,7 @@ This is an IDE to run Java code, allthough any programing environment _should_ w
 
 
 #Project Use
+
 To run the first stage of this project download the zip file. 
 Superate  the file "Crack64Bit_The_Beginning" from the group I would suggest to drag it onto you desktop. 
 The executeable file "GPU.exe" does all the magic for you, click that and watch your power bill rise. 
