@@ -4,7 +4,7 @@
 Minecraft seed cracking the practice of finding an exact Minecraft world from data from that world. This particular program is a series two programs to spilt the task of finding the world seed. We start the progam with some GPU programing with [CUDA](https://developer.nvidia.com/cuda-toolkit) in the file **Crack64Bit_The_Beginning** runs a defined set of data to spilt the possible structure seeds (the bottom 48 bits of a Minecarft worldseed).  This is retutured as a text file as a data pool to be filtered in second program **Crack64Bit_The_Sequel** to return useable world seeds.  This program is written in Java makeing use of the [Minecraft Seed Libarys](https://kaptainwutax.seedfinding.com/) devloped by user [Kaptainwutax](https://github.com/KaptainWutax).  
 
 
-## Docmentation
+# Project Use
 To run this project you will need a few things:
 
 **-Patience**
@@ -24,18 +24,9 @@ Build tool for Java. Used to incorporate the seed finding libarys into the Java 
 
 This is an IDE to run Java code, allthough any programing environment _should_ work code is configured to work on this environment. 
 
+When everything is installed you can run the first of this project by dowloading the zip file apart this Github respiratory. The two programs are combined because of their dependency on the other. The first stage of this project is found in the file **"Crack64Bit_The_Beginning"**. Use was desinged to be very simple drag the folder to your computers desktop and run the executeable file "GPU.exe" that does all the magic for you. You can see a screen recoding of this procsss [here](https://youtu.be/m_Qbvg5l4D8). 
 
-
-# Project Use
-
-To run the first stage of this project download the zip file. 
-Superate  the file "Crack64Bit_The_Beginning" from the group I would suggest to drag it onto you desktop. 
-The executeable file "GPU.exe" does all the magic for you, click that and watch your power bill rise. 
-You can see a screen recoding of this procsss [here](https://youtu.be/m_Qbvg5l4D8). 
-
-
-After this proces you would recive a out.txt file.  Compile this with the second program "Crack64Bit_The_Sequel" 
-
+After this proces you would recive a out.txt file. Compile this with the second program **"Crack64Bit_The_Sequel"**. You can do this by adding the file to your resources folder on IntelliJ IDEA. You can see a screen recoding of this procsss [here](https://youtu.be/vMJORczjRSk). 
 
 
 
