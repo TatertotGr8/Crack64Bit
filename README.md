@@ -36,13 +36,13 @@ This program is intentionally designed to be accessible in how it was uploaded. 
   if (!fortress(worldSeed,-9, 20))continue; 
   if (!fortress(worldSeed,-10, 20))continue; 
   if (!fortress(worldSeed,-11, 20))continue; 
-  if (!fortress (worldSeed,-12, 20))continue; 
+  if (!fortress(worldSeed,-12, 20))continue; 
   if (!fortress(worldSeed,-6, 19))continue; 
   if (!fortress(worldSeed,-6, 18))continue;
   if (!fortress(worldSeed,-6, 20))continue; 
   if (!fortress(worldSeed,-6, 21))continue; 
   if (!fortress(worldSeed,-8, 20))continue; 
-  if (!fortress (worldSeed,-5, 39))continue; 
+  if (!fortress(worldSeed,-5, 39))continue; 
   if (!fortress(worldSeed,-5, 20))continue; 
   if (!fortress(worldSeed,-6, 22))continue; 
  
@@ -89,6 +89,10 @@ For full writen documentation view [here](https://docs.google.com/document/d/1S-
 
 
 ## Acknowledgements
+
+**[Salts](https://drive.google.com/drive/folders/1ZFra3pnPNAz_CGeRdZTc0GMPA3yOqPA8)** courtesy of [Neil](https://github.com/hube12)
+
+
 
  - [Kaptainwutax Minecraft Seed Finding libraries](https://kaptainwutax.seedfinding.com/)
   
