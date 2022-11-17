@@ -53,17 +53,35 @@ If you wish to search for another structure this is NOT the program for you beca
 
 The out.txt file is than compiled with the seoncd program to return the Minecraft world seed. 
 Two things need to be chnaged on the Java program for finding your seeds.
+First the list of chunk chunk possions realteing to your fortress, this should be the same as the first program. 
 
 ```bash
 add(new CPos(-9, 20));
-		add(new CPos(-10, 20));
-		add(new CPos(-11, 20));
-		add(new CPos(-12, 20));
-		add(new CPos(-6, 19));
-		add(new CPos(-6, 18));
-		add(new CPos(-6, 20));
-		add(new CPos(-6, 21));
-		add(new CPos(-8, 20));
+add(new CPos(-10, 20));
+add(new CPos(-11, 20));
+add(new CPos(-12, 20));
+add(new CPos(-6, 19));
+add(new CPos(-6, 18));
+add(new CPos(-6, 20));
+add(new CPos(-6, 21));
+add(new CPos(-8, 20));
+```
+
+
+as well as 
+
+```bash
+add(new BPos(-196, 41, 233));
+add(new BPos(-197, 42, 233));
+add(new BPos(-199, 43, 233));
+add(new BPos(-198, 40, 220));
+add(new BPos(-200, 42, 222));
+add(new BPos(-201, 41, 222));
+add(new BPos(-201, 39, 221));
+add(new BPos(-201, 38, 220));
+add(new BPos(-202, 36, 218));
+add(new BPos(-204, 35, 216));
+	
 ```
 
 
