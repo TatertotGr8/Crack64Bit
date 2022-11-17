@@ -68,7 +68,7 @@ add(new CPos(-8, 20));
 ```
 
 
-as well as 
+As well as the list of block possions to gather terrian data. All that you have to do here is replace the vaules with various coordinates in random spots in a Minecraft chunk. The selected chunk has to be an open spot with no noticeable bits of land reaching over/ covering it. As well as the inclusion of a some terrain at various Y, heights.    
 
 ```bash
 add(new BPos(-196, 41, 233));
@@ -84,6 +84,8 @@ add(new BPos(-204, 35, 216));
 	
 ```
 
+
+For full writen documentation view [here](https://docs.google.com/document/d/1S-tqtsDtqdalQDEEsopy5CnU4O1-bL9xtSGgOIrrxzI/edit#). 
 
 
 ## Acknowledgements
