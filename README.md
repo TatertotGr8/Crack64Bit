@@ -88,7 +88,7 @@ add(new BPos(-204, 35, 216));
 For full writen documentation view [here](https://docs.google.com/document/d/1S-tqtsDtqdalQDEEsopy5CnU4O1-bL9xtSGgOIrrxzI/edit#). 
 
 
-## Acknowledgements
+## References
 
 - **[Salts](https://drive.google.com/drive/folders/1ZFra3pnPNAz_CGeRdZTc0GMPA3yOqPA8)** courtesy of [Neil](https://github.com/hube12)
 
