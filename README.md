@@ -90,21 +90,15 @@ For full writen documentation view [here](https://docs.google.com/document/d/1S-
 
 ## Acknowledgements
 
-**[Salts](https://drive.google.com/drive/folders/1ZFra3pnPNAz_CGeRdZTc0GMPA3yOqPA8)** courtesy of [Neil](https://github.com/hube12)
+- **[Salts](https://drive.google.com/drive/folders/1ZFra3pnPNAz_CGeRdZTc0GMPA3yOqPA8)** courtesy of [Neil](https://github.com/hube12)
 
-
-
- - [Kaptainwutax Minecraft Seed Finding libraries](https://kaptainwutax.seedfinding.com/)
+- [Kaptainwutax Minecraft Seed Finding libraries](https://kaptainwutax.seedfinding.com/)
   
- - [hube12 (Neil)](https://github.com/hube12)
+- [hube12 (Neil)](https://github.com/hube12)
 
- - [Minecraft@home](https://minecraftathome.com/)
+- [Minecraft@home](https://minecraftathome.com/)
  
- - [CUDA](https://docs.nvidia.com/cuda/)
-
-## Lessons Learned
-
-What did you learn while building this project? What challenges did you face and how did you overcome them?
+- [CUDA](https://docs.nvidia.com/cuda/)
 
 
 ## Support
