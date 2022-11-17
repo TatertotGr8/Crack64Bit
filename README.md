@@ -47,7 +47,8 @@ This program is intentionally designed to be accessible in how it was uploaded. 
   if (!fortress(worldSeed,-6, 22))continue; 
  
 ```
-
+Currently this program is a list of Minecraft nether fortress chunk possions in our desired world. It is imporant to have mutiple data ponits to filter the output results so the second program is not overwhelmed. Very simple to replace the data ponits with relavent chunk possions, that would be the coordinates dived by 16.  
+If you wish to search for another structure this is NOT the program for you because all the math is in terms of a Nether fortress from version 1.17. If you you wish to do so the [slats](https://en.wikipedia.org/wiki/Salt_(cryptography)) from previous to do so are listed below.    
 
 
 ## Acknowledgements
