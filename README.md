@@ -30,7 +30,7 @@ When everything is installed you can run the first of this project by dowloading
 
 After this proces you would recive a out.txt file. Compile this with the second program **"Crack64Bit_The_Sequel"**. You can do this by adding the file to your resources folder on IntelliJ IDEA. You can see a screen recoding of this procsss [here](https://youtu.be/vMJORczjRSk). 
 
-This program is intentionally designed to be accessible in how it was uploaded.  Changeing the program to filter for a diffent set of data follows that model. Starting with the first program the imporant files to edit would be the kernal. Without majoir exterior editing of the program the only thing you would need to chnage is the defined fortress's. 
+This program is intentionally designed to be accessible in how it was uploaded. Changeing the program to filter for a diffent set of data follows that model. Starting with the first program the imporant files to edit would be the kernal. Without majoir exterior editing of the program the only thing you would need to chnage is the defined fortress's. 
 
 ```bash
   if (!fortress(worldSeed,-9, 20))continue; 
@@ -49,6 +49,23 @@ This program is intentionally designed to be accessible in how it was uploaded. 
 ```
 Currently this program is a list of Minecraft nether fortress chunk possions in our desired world. It is imporant to have mutiple data ponits to filter the output results so the second program is not overwhelmed. Very simple to replace the data ponits with relavent chunk possions, that would be the coordinates dived by 16.  
 If you wish to search for another structure this is NOT the program for you because all the math is in terms of a Nether fortress from version 1.17. If you you wish to do so the [slats](https://en.wikipedia.org/wiki/Salt_(cryptography)) from previous to do so are listed below.    
+
+
+The out.txt file is than compiled with the seoncd program to return the Minecraft world seed. 
+Two things need to be chnaged on the Java program for finding your seeds.
+
+```bash
+add(new CPos(-9, 20));
+		add(new CPos(-10, 20));
+		add(new CPos(-11, 20));
+		add(new CPos(-12, 20));
+		add(new CPos(-6, 19));
+		add(new CPos(-6, 18));
+		add(new CPos(-6, 20));
+		add(new CPos(-6, 21));
+		add(new CPos(-8, 20));
+```
+
 
 
 ## Acknowledgements
