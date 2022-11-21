@@ -1,7 +1,7 @@
 
 # Crack64Bit
 
-Minecraft seed cracking the practice of finding an exact Minecraft world from data from that world. This particular program is a series two programs to spilt the task of finding the world seed. We start the progam with some GPU programing with [CUDA](https://developer.nvidia.com/cuda-toolkit) in the file **Crack64Bit_The_Beginning** runs a defined set of data to spilt the possible structure seeds (the bottom 48 bits of a Minecarft worldseed).  This is retutured as a text file as a data pool to be filtered in second program **Crack64Bit_The_Sequel** to return useable world seeds.  This program is written in Java makeing use of the [Minecraft Seed Libarys](https://kaptainwutax.seedfinding.com/) devloped by user [Kaptainwutax](https://github.com/KaptainWutax).  
+Minecraft seed cracking is the practice of finding an exact Minecraft world from data from that world. This particular program is a series of two programs to spilt the task of finding the world seed. We start the program with some GPU programming with [CUDA](https://developer.nvidia.com/cuda-toolkit) in the file **Crack64Bit_The_Beginning** runs a defined set of data to spilt the possible structure seeds (the bottom 48 bits of a Minecraft world seed). This is returned as a text file as a data pool to be filtered in the second program **Crack64Bit_The_Sequel** to return functional world seeds. This program is written in Java making use of the [Minecraft Seed Libarys](https://kaptainwutax.seedfinding.com/) developed by user [Kaptainwutax](https://github.com/KaptainWutax).  
 
 
 # Project Use
