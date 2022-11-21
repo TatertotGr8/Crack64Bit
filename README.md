@@ -1,7 +1,7 @@
 
 # Crack64Bit
 
-Minecraft seed cracking is the practice of finding an exact Minecraft world from data from that world. This particular program is a series of two programs to spilt the task of finding the world seed. We start the program with some GPU programming with [CUDA](https://developer.nvidia.com/cuda-toolkit) in the file **Crack64Bit_The_Beginning** runs a defined set of data to spilt the possible structure seeds (the bottom 48 bits of a Minecraft world seed). This is returned as a text file as a data pool to be filtered in the second program **Crack64Bit_The_Sequel** to return functional world seeds. This program is written in Java making use of the [Minecraft Seed Libarys](https://kaptainwutax.seedfinding.com/) developed by user [Kaptainwutax](https://github.com/KaptainWutax).  
+Minecraft Seed Cracking is the practice of finding an exact Minecraft world from data from that world. This particular program is a series of two programs to spilt the task of finding the world seed. We start the program with some GPU programming with [CUDA](https://developer.nvidia.com/cuda-toolkit) in the file **Crack64Bit_The_Beginning** runs a defined set of data to spilt the possible structure seeds (the bottom 48 bits of a Minecraft world seed). This is returned as a text file as a data pool to be filtered in the second program **Crack64Bit_The_Sequel** to return functional world seeds. This program is written in Java making use of the [Minecraft Seed Libarys](https://kaptainwutax.seedfinding.com/) developed by user [Kaptainwutax](https://github.com/KaptainWutax).  
 
 For full written documentation and details related to Minecraft Seed Cracking, view [here](https://docs.google.com/document/d/1S-tqtsDtqdalQDEEsopy5CnU4O1-bL9xtSGgOIrrxzI/edit#). 
 
@@ -21,29 +21,7 @@ Required for the second program, double check the variables you would need a var
 
 **-[Gradle](https://gradle.org/)**
 
-Build tool for Java. Used to incorporate the seed finding libraries into the Java program. When installing Gradle it is important to make sure it is a compatible verrsion of the Java release you have on your system (seen on the site's documentation). And **Gradle_Home** is set as a system variable with the path set to the folders locasion on your system and the bin folder added to the **"PATH"** variable.
-
-**-[IntelliJ IDEA](https://www.jetbrains.com/idea/)**
-
-This is an IDE to run Java code, although any programming environment _should_ work code is configured to work on this environment. 
-
-# Project Use
-To run this project you will need a few things:
-
-**-Patience**
-This is finding a seed though brute force is not the most efficient method be prepared to leave your computer running for a few hours. 
-
-**-[The Nvidia Cuda Toolkit](https://developer.nvidia.com/cuda-toolkit)**
-
-A fundamental part of this program is the use of parrel programming to find structure seeds. This is done by parrel programming made possible by the Nvidia Cuda Toolkit. By extension, this also means you are required to have an Nvidia GPU to run this program.  
-
-**-[JavaJDK](https://www.oracle.com/java/technologies/javase/jdk16-archive-downloads.html)**
-
-Required for the second program, double check the variables you would need a variable "JAVA_HOME" is set to your Java JDK installed, and the "PATH" variable is set to the bin folder in your Java JDK folder.
-
-**-[Gradle](https://gradle.org/)**
-
-Build tool for Java. Used to incorporate the seed-finding libraries into the Java program.  When installing Gradle it is important to make sure it is a compatible version of the Java release you have on your system (seen on the site's documentation). And **Gradle_Home** is set as a system variable with the path set to the folders locasion on your system the bin folder added to the **"PATH"** variable.
+Build tool for Java. Used to incorporate the seed-finding libraries into the Java program.  When installing Gradle it is important to make sure it is a compatible version of the Java release you have on your system (seen on the site's documentation). And **Gradle_Home** is set as a system variable with the path set to the folder's location on your system the bin folder added to the **"PATH"** variable.
 
 **-[IntelliJ IDEA](https://www.jetbrains.com/idea/)**
 
@@ -70,10 +48,10 @@ This program is intentionally designed to be accessible in how it was uploaded. 
   if (!fortress(worldSeed,-6, 22))continue; 
  
 ```
-Currently, this program is a list of Minecraft nether fortress chunk positions in our desired world. It is important to have mutiple data points to filter the output results so the second program is not overwhelmed. Very simple to replace the data points with relevant chunk positions, which would be the coordinates dived by 16.  If you wish to search for another structure this is NOT the program for you because all the math is in terms of a Nether fortress from version 1.17. If you wish to do so the [salts](https://en.wikipedia.org/wiki/Salt_(cryptography)) from previous to do so are listed below.  
+Currently, this program is a list of Minecraft nether fortress chunk positions in our desired world. It is important to have multiple data points to filter the output results so the second program is not overwhelmed. Very simple to replace the data points with relevant chunk positions, which would be the coordinates dived by 16.  If you wish to search for another structure this is NOT the program for you because all the math is in terms of a Nether fortress from version 1.17. If you wish to do so the [salts](https://en.wikipedia.org/wiki/Salt_(cryptography)) from previous to do so are listed below.  
 
 
-Two things need to be changed in the Java program for finding your seeds. First the list of chunk positions relating to your fortress, should be the same as the first program. 
+Two things need to be changed in the Java program for finding your seeds. First, the list of chunk positions relating to your fortress should be the same as the first program. 
 
 ```bash
 add(new CPos(-9, 20));
