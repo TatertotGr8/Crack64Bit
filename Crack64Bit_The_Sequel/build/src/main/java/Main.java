@@ -1,4 +1,3 @@
-//adds necessary libraries 
 import kaptainwutax.biomeutils.source.BiomeSource;
 import kaptainwutax.featureutils.structure.Fortress;
 import kaptainwutax.mcutils.block.Block;
@@ -133,6 +132,3 @@ InputStream in = Crack2 .class.getResourceAsStream("/out.txt");
 		return reader.lines().parallel().map(x -> Long.parseLong(x, 16)).collect(Collectors.toList());
 	}
 }
-
-
-
