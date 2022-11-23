@@ -27,8 +27,8 @@ inline uint random_next (Random *random, int bits) {
 
 // Random next bits
 inline uint random_next (Random *random, int bits) {
-  *random = (*random * RANDOM_MULTIPLIER + RANDOM_ADDEND) & RANDOM_MASK;
-  return (uint)(*random >> (48 - bits));
+ *random = (*random * RANDOM_MULTIPLIER + RANDOM_ADDEND) & RANDOM_MASK;
+ return (uint)(*random >> (48 - bits));
 }
 // JRAND DOUBLE
 #endif 
@@ -39,20 +39,20 @@ inline uint random_next (Random *random, int bits) {
 
 // Random nextInt; bound
 inline uint random_next_int (Random *random, uint bound) {
-  int r = random_next(random, 31);
-  int m = bound - 1;
-  if ((bound & m) == 0) {
-    r = (uint)((bound * (ulong)r) >> 31);
-  } else {
-    for (int u = r;
-       u - (r = u % bound) + m < 0;
-       u = random_next(random, 31));
-  }
-  return r;
+ int r = random_next(random, 31);
+ int m = bound - 1;
+ if ((bound & m) == 0) {
+  r = (uint)((bound * (ulong)r) >> 31);
+ } else {
+  for (int u = r;
+    u - (r = u % bound) + m < 0;
+    u = random_next(random, 31));
+ }
+ return r;
 }
 
 inline long random_next_long (Random *random) {
-  return (((long)random_next(random, 32)) << 32) + random_next(random, 32);
+ return (((long)random_next(random, 32)) << 32) + random_next(random, 32);
 }
 
 #endif
